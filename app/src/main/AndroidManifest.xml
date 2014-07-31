@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.viewproject4.app" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/up_button"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- The main/Home activity (has no parent activity)-->
+        <activity
+            android:name="com.example.viewproject4.app.MainActivity"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- The children of the main activity -->
+        <activity
+            android:name="com.example.viewproject4.app.Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".Report"
+            android:label="@string/title_button_report"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

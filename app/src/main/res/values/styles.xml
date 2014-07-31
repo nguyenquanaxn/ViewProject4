@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+       <!-- <item name="android:background">@drawable/action_bar_bg</item>
+       <item name="android:layout_gravity">center_horizontal</item>-->
+       <item name="android:displayOptions">homeAsUp|showHome</item>
+        <!--<item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:homeAsUpIndicator">@drawable/up_button</item>-->
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+</resources>
